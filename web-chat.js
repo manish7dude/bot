@@ -7,7 +7,7 @@
     WEB_CHAT_BASE_URL: "https://app.zammo.ai",
     WEB_CHAT_SESSION_TTL: "3600",
     WEB_CHAT_CSS_URL: "https://nonprdzammostormhzvq.blob.core.windows.net/zammo-bot-ui-kit/zammo-bot-ui-kit-0.13.0.min.css",
-    ASSET_URL: "./assets/chatBot/images"
+    ASSET_URL: "https://cdn.jsdelivr.net/gh/manish7dude/bot@main/images"
   };
 
 
@@ -295,3 +295,4 @@ resetEl.innerHTML =
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
