@@ -38,7 +38,7 @@
         <span>Hey there!</span>
       </div>
       <div class="chat-icon">
-        <img src="${appConfig.ASSET_URL}/sacramento.png" alt="Chat Icon">
+        <img src="https://cdn.jsdelivr.net/gh/manish7dude/bot@main/images/sacramento.png" alt="Chat Icon">
       </div>
     </div>
   `;
@@ -298,5 +298,6 @@ resetEl.innerHTML =
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
 
 
