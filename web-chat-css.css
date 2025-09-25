@@ -1,0 +1,466 @@
+ .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon {
+  background:transparent;
+  height:auto;
+  border-radius:0;
+  width:9.5rem;
+  bottom:2.5rem;
+  display:none;
+  padding:0;
+  box-shadow:none;
+  right:10px;
+  width:9.5rem;
+  border-width: 0px;
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon.show:not(.is-hidden) {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+  outline:none
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon--icon {
+  color:#000;
+  display:none!important
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon #chatBotIcon,.cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon svg {
+  width:100%;
+  height:100%;
+  border-radius:50%
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .bottom-container {
+  display:flex;
+  align-items:center;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#f5f5f5;
+  border-radius:1.5rem;
+  padding:.5rem 1rem;
+  box-shadow:0 4px 8px #0000001a
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chat-text-scroll {
+  overflow:hidden;
+  white-space:nowrap;
+  max-width:100px;
+  margin-right:.5rem
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chat-text-scroll span {
+  display:inline-block;
+  animation:scroll-left 5s linear infinite;
+  color:#000
+  }
+  
+  @keyframes scroll-left {
+  0% {
+  transform:translateX(100%)
+  }
+  
+  100% {
+  transform:translateX(-100%)
+  }
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chat-icon {
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  overflow:hidden;
+  box-shadow:0 2px 6px #0003
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chat-icon img {
+  width:100%;
+  height:100%;
+  object-fit:cover
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chatbot-container {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  background:#fff;
+  box-shadow:0 0 20px #000 29;
+  border-radius:71px 0 61px 71px;
+  padding:.25rem;
+  color:#000;
+  font-weight:700
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .bot-image {
+  border-radius:50%;
+  width:3.3rem;
+  height:3.3rem;
+  animation:botBounce 2s ease infinite
+  }
+  
+  @keyframes botBounce {
+  0%,20%,50%,80%,100% {
+  transform:translateY(0)
+  }
+  
+  40% {
+  transform:translateY(-30px)
+  }
+  
+  60% {
+  transform:translateY(-15px)
+  }
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chatbot-help-text {
+  position:relative;
+  width:5rem;
+  padding-left:.5rem
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chatbot-help-text-wrapper {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chatbot-help-text-wrapper > span {
+  opacity:0;
+  position:absolute;
+  transform:translateY(100%)
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chatbot-msg-1 {
+  animation:fadeInOut 10s infinite;
+  font-family:Helvetica,sans-serif
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chatbot-msg-2 {
+  animation:fadeInOut 10s infinite;
+  animation-delay:5s
+  }
+  
+  @keyframes fadeInOut {
+  0% {
+  opacity:0;
+  transform:translateY(100%)
+  }
+  
+  5%,45% {
+  opacity:1;
+  transform:translateY(0)
+  }
+  
+  55%,100% {
+  opacity:0;
+  transform:translateY(100%)
+  }
+  }
+  
+  @keyframes stopAnimation {
+  0%,99.9% {
+  opacity:0;
+  transform:translateY(100%)
+  }
+  
+  100% {
+  opacity:1;
+  transform:translateY(0)
+  }
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chatbot-msg-1.stop,.cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .bot-image.stop {
+  animation:stopAnimation 0s forwards
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .chatbot-msg-2.stop {
+  animation:none;
+  opacity:0;
+  transform:translateY(100%)
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .jumping-dots span {
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  animation:jump 1s infinite;
+  display:inline-block
+  }
+  
+  .cami #zammoBotUIComponent .text-center {
+  text-align:center!important;
+  font-size:medium
+  }
+  
+  .cami #zammoBotUIComponent .pe-2 {
+  padding-right:.5rem!important
+  }
+  
+  .cami #zammoBotUIComponent .pt-2 {
+  padding-top:.5rem!important
+  }
+  
+  .cami #zammoBotUIComponent .mt-2 {
+  margin-top:.5rem!important
+  }
+  
+  .cami #zammoBotUIComponent .w-100 {
+  width:100%!important
+  }
+  
+  .cami #zammoBotUIComponent .d-flex {
+  display:flex!important
+  }
+  
+  .cami #zammoBotUIComponent .secondary-btn {
+  background-color:#fff;
+  color:#036;
+  border:1px solid #c0c6cc;
+  padding:.375rem .75rem;
+  border-radius:.25rem;
+  text-align:center;
+  display:inline-block;
+  cursor:pointer;
+  text-decoration:none;
+  font-size:1rem
+  }
+  
+  .cami #zammoBotUIComponent .secondary-btn:hover {
+  background-color:#036;
+  color:#fff
+  }
+  
+  .cami #zammoBotUIComponent .reset-confirmation-button {
+  background-color:#fff;
+  color:#036;
+  border:1px solid #c0c6cc;
+  padding:.375rem .75rem;
+  border-radius:.25rem;
+  text-align:center;
+  display:inline-block;
+  cursor:pointer;
+  text-decoration:none;
+  font-size:1rem
+  }
+  
+  .cami #zammoBotUIComponent .reset-confirmation-button:hover {
+  background-color:#036;
+  color:#fff
+  }
+  
+  .cami #zammoBotUIComponent .ms-3 {
+  margin-left:1rem
+  }
+  
+  .cami #zammoBotUIComponent .flex-fill {
+  flex:1 1 0
+  }
+  
+  .cami #zammoBotUIComponent .align-items-center {
+  align-items:center
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .jumping-dots .dot-1,.cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .jumping-dots .dot-2,.cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .jumping-dots .dot-3 {
+  width:.7rem;
+  height:.7rem;
+  border-radius:50%;
+  margin-right:3px
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .jumping-dots .dot-1 {
+  background:green;
+  animation-delay:200ms
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .jumping-dots .dot-2 {
+  background:#f9a01d;
+  animation-delay:400ms
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatIcon .jumping-dots .dot-3 {
+  background:#789ed3;
+  animation-delay:600ms
+  }
+  
+  @keyframes jump {
+  0% {
+  bottom:0
+  }
+  
+  20% {
+  bottom:5px
+  }
+  
+  40% {
+  bottom:0
+  }
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame {
+  z-index:500
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header {
+  background-color:#036;
+  margin:0;
+  width:90%;
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0 rem;
+  font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+  font-size:medium;
+  height:7%
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .bot-title {
+  color:#fff;
+  font-weight:700;
+  margin-right:auto;
+  align-items:center;
+  vertical-align:middle;
+  display:flex;
+  padding:20% 0 0 10%
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .bot-icon {
+  height:3rem;
+  width:3rem;
+  border-radius:50%;
+  float:left
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header #zammoBotUIComponent--chatFrame--header--closeIcon {
+  all:inherit;
+  width:1.2rem;
+  height:1.2em;
+  cursor:pointer;
+  padding-left:0;
+  background-color:transparent;
+  color:#000!important;
+  background:#036!important
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header #zammoBotUIComponent--chatFrame--header--closeIcon:focus {
+  border-radius:.2rem;
+  padding:.7rem 0;
+  box-shadow:0 0 0 3px #036
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header #zammoBotUIComponent--chatFrame--header--closeIcon .mode-close {
+  width:auto;
+  line-height:normal;
+  font-size:1.2rem;
+  color:#fff;
+  border:none;
+  background-color:#036;
+  font-weight:800
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header #zammoBotUIComponent--chatFrame--header--endConvIcon .close-btn {
+  margin-top:4px;
+  color:#fff
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header #zammoBotUIComponent--chatFrame--header--endConvIcon {
+  width:auto;
+  margin-right:.8rem;
+  padding:.25rem .5rem!important;
+  height:1.5rem!important;
+  min-width:auto;
+  background-color:transparent;
+  color:#000!important;
+  border:none;
+  margin-right:0;
+  margin-left:.5rem;
+  padding:0!important
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header #zammoBotUIComponent--chatFrame--header--resetIcon {
+  width:auto;
+  margin-right:.8rem;
+  padding:.25rem .5rem!important;
+  height:1.5rem!important;
+  min-width:auto;
+  background-color:transparent;
+  color:#fff!important;
+  border:none;
+  margin-right:0;
+  margin-left:1rem
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip {
+  margin:0;
+  justify-content:flex-end
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation {
+  z-index:1
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation.active .help-tooltip-container {
+  display:block
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation.reset-btn {
+  padding-left:36%
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation .help-tooltip-container {
+  border-color:#fff;
+  background-color:#fff;
+  box-shadow:-5px -5px 30px 0 #000f;
+  display:none;
+  position:absolute;
+  right:5rem;
+  margin-top:1.2rem;
+  border:2px solid #789ed3;
+  border-radius:11px
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation .help-tooltip-reset {
+  right:10%;
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation .help-tooltip-close {
+  right: 0%;;
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation .help-tooltip-container .help-tooltip-body {
+  color:#000;
+  background-color:#fff;
+  padding:1rem .75rem;
+  width:17rem;
+  font-size:1rem;
+  flex-direction:column!important;
+  display:flex!important;
+  border-radius:6px
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation .help-tooltip-container .help-tooltip-body .reset-confirmation-button {
+  border-color:#e5e5ec
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .help-tooltip.reset-conversation .help-tooltip-container:after {
+  border-bottom-color:#fff;
+  right:2.25rem
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header #zammoBotUIComponent--chatFrame--header--extension-menu--options--refresh-session-button {
+  display:none
+  }
+  
+  .cami #zammoBotUIComponent #zammoBotUIComponent--chatFrame #zammoBotUIComponent--chatFrame--header .zammoBotUIComponent--chatFrame--header--right {
+  margin-left:0
+  }
+  
+  .main_div {
+  min-height:100vh;
+  color:gray
+  }
