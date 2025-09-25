@@ -91,7 +91,7 @@
 
       var camiIconEl = document.createElement("div");
      camiIconEl.innerHTML = `
-  <img class="bot-icon" src="${appConfig.ASSET_URL}/sacramento.png" alt="Cami Icon" />
+  <img class="bot-icon" src="https://cdn.jsdelivr.net/gh/manish7dude/bot@main/images/sacramento.png" alt="Cami Icon" />
   <span class="bot-title">Cami</span>
 `;
       headerEl.insertBefore(camiIconEl, headerEl.children[0]);
@@ -298,6 +298,7 @@ resetEl.innerHTML =
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
 
 
 
