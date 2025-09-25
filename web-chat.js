@@ -32,16 +32,16 @@
   }
 
   function setReshapeChatIcon() {
-    var chatIconHtml = `
-  <div class="bottom-container">
-    <div class="chat-text-scroll">
-      <span>Hey there!</span>
+  var chatIconHtml = `
+    <div class="bottom-container">
+      <div class="chat-text-scroll">
+        <span>Hey there!</span>
+      </div>
+      <div class="chat-icon">
+        <img src="${appConfig.ASSET_URL}/sacramento.png" alt="Chat Icon">
+      </div>
     </div>
-    <div class="chat-icon">
-      <img src="/assets/chatBot/images/sacramento.png" alt="Chat Icon">
-    </div>
-  </div>
-`;
+  `;
     //var chatIconHtml = '<div class="bottom-container">...</div>'; // Use your SVG/HTML here
     var zammoChatbot = document.getElementById("zammoBotUIComponent");
 
@@ -90,7 +90,10 @@
       var doeIcon = appConfig.ASSET_URL + "/sacramento.png";
 
       var camiIconEl = document.createElement("div");
-      camiIconEl.innerHTML = '<img class="bot-icon" src="./assets/chatBot/images/sacramento.png" alt="Cami Icon"/><span class="bot-title">Cami</span>';
+     camiIconEl.innerHTML = `
+  <img class="bot-icon" src="${appConfig.ASSET_URL}/sacramento.png" alt="Cami Icon" />
+  <span class="bot-title">Cami</span>
+`;
       headerEl.insertBefore(camiIconEl, headerEl.children[0]);
 
       var resetEl = document.createElement("div");
@@ -295,4 +298,5 @@ resetEl.innerHTML =
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
 
