@@ -488,15 +488,15 @@ chatInputObserver.observe(document.body, {
 
            const loginUrl = `${window.location.origin}/app/utils/chatbot_login`;
 
-           // const loginUrl = `https://sacco311connect--tst2.custhelp.com/app/utils/chatbot_login`;
+            //const loginUrl = `https://sacco311connect--tst2.custhelp.com/app/utils/chatbot_login`;
 
             //const loginUrl = `http://localhost:4200/`;
             
             console.log("loginUrl ------------:", loginUrl);
-            //const loginWindow = window.open(
-             // loginUrl,
-              //"_blank"
-            //);
+            const loginWindow = window.open(
+              loginUrl,
+              "_blank"
+            );
 
             if (!loginWindow) {
               console.warn("Popup blocked. Unable to open chatbot_login window.");
@@ -608,6 +608,7 @@ chatInputObserver.observe(document.body, {
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
 
 
 
