@@ -513,6 +513,7 @@ chatInputObserver.observe(document.body, {
         }
 
         else if (activity?.type === this.toggleInput) {
+           console.log("Loaded at:", new Date().toISOString());
           console.log("Toggle Activity triggered:", activity);   // Log activity
           const activityValue = activity.value;
           console.log("Toggle Activity value:", activityValue);  // Log value
@@ -607,6 +608,7 @@ chatInputObserver.observe(document.body, {
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
 
 
 
