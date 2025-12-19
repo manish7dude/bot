@@ -484,6 +484,7 @@ chatInputObserver.observe(document.body, {
 
           return setTimeout(() => {
             console.log("Opening chatbot_login in new window...");
+            console.log("Loaded at:", new Date().toISOString());
 
            const loginUrl = `${window.location.origin}/app/utils/chatbot_login`;
 
@@ -492,10 +493,10 @@ chatInputObserver.observe(document.body, {
             //const loginUrl = `http://localhost:4200/`;
             
             console.log("loginUrl ------------:", loginUrl);
-            const loginWindow = window.open(
-              loginUrl,
-              "_blank"
-            );
+            //const loginWindow = window.open(
+             // loginUrl,
+              //"_blank"
+            //);
 
             if (!loginWindow) {
               console.warn("Popup blocked. Unable to open chatbot_login window.");
@@ -606,6 +607,7 @@ chatInputObserver.observe(document.body, {
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
 
 
 
