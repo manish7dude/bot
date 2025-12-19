@@ -487,9 +487,9 @@ chatInputObserver.observe(document.body, {
 
            // const loginUrl = `${window.location.origin}/app/utils/chatbot_login`;
 
-            //const loginUrl = `https://sacco311connect--tst2.custhelp.com/app/utils/chatbot_login`;
+            const loginUrl = `https://sacco311connect--tst2.custhelp.com/app/utils/chatbot_login`;
 
-            const loginUrl = `http://localhost:4200/`;
+            //const loginUrl = `http://localhost:4200/`;
             
 
             const loginWindow = window.open(
@@ -606,3 +606,4 @@ chatInputObserver.observe(document.body, {
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
