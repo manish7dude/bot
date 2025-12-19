@@ -1,6 +1,6 @@
 (function () {
 
-
+alert(new Date().toLocaleString());
   var appConfig = {
     WEB_CHAT_JS_URL: "https://nonprdzammostormhzvq.blob.core.windows.net/zammo-bot-ui-kit/zammo-bot-ui-kit-0.13.0.min.js",
     WEB_CHAT_ID: "00000000-0000-0000-0000-000000000000",
