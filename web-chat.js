@@ -491,7 +491,7 @@ chatInputObserver.observe(document.body, {
 
             //const loginUrl = `http://localhost:4200/`;
             
-
+            console.log("loginUrl ------------:", loginUrl);
             const loginWindow = window.open(
               loginUrl,
               "_blank"
@@ -606,4 +606,5 @@ chatInputObserver.observe(document.body, {
     document.addEventListener("DOMContentLoaded", loadWebChat);
   }
 })();
+
 
